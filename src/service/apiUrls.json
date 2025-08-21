@@ -1,0 +1,8 @@
+{
+   
+   "ADD_USER":"api/user/add",
+   "GET_USER_LIST":"api/user",
+   "UPDATED_USER":"api/user/",
+   "DELETE_USER":"api/user/"
+   
+}
