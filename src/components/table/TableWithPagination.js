@@ -18,10 +18,10 @@ const TableWithPagination = (props) => {
   return (
     <div className="container mt-4">
       <table className="table table-bordered table-striped">
-        <thead className="table-dark">
+        <thead className="table-primary">
           <tr>
             {columns.map((col, idx) => (
-              <th key={idx}>{col.label}</th>
+              <th key={idx} className={col.className || ""}>{col.label}</th>
             ))}
           </tr>
         </thead>
@@ -29,7 +29,7 @@ const TableWithPagination = (props) => {
           {currentData.map((row, idx) => (
             <tr key={idx}>
               {columns.map((col, cIdx) => (
-                <td key={cIdx}>
+                <td key={cIdx} className={col.className || ""}>
                   {typeof col.render === "function"
                     ? col.render(row)
                     : row[col.field]}

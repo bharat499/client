@@ -67,10 +67,11 @@ const UserList = () => {
       render: (row) => `${row.fname} ${row.lname}`,
     },
     { label: "Email", field: "email" },
-    { label: "Mobile", field: "mobileNo" },
+    { label: "Mobile", field: "mobileNo",className: "text-center" },
     {
       label: "Actions",
       field: "actions",
+      className: "text-center",
       render: (row) => (
         <>
           <button
