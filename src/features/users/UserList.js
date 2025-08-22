@@ -81,7 +81,7 @@ const UserList = () => {
             className="btn btn-warning btn-sm me-2"
             onClick={() => onEdit(row)}
           >
-            <i class="bi bi-pen"></i>
+            <i className="bi bi-pen"></i>
           </button>
 
           <button
@@ -91,7 +91,7 @@ const UserList = () => {
             className="btn btn-danger btn-sm"
             onClick={() => onDelete(row)}
           >
-             <i class="bi bi-trash"></i>
+             <i className="bi bi-trash"></i>
           </button>
         </>
       ),
