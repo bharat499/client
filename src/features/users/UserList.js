@@ -32,8 +32,8 @@ const UserList = () => {
       console.log(error);
     }
   };
-  const onDelete = async (id) => {
-    setUserId(id);
+  const onDelete = async (row) => {
+    setUserId(row?._id);
     setShowConfirm(true);
   };
   const handleConfirm = async () => {
@@ -112,7 +112,7 @@ const UserList = () => {
             </button>
           </div>
         </div>
-        <TableWithPagination columns={columns} data={users} itemsPerPage={5} />
+        <TableWithPagination columns={columns} data={users} itemsPerPage={10} />
         
 
         <ConfirmDialog
