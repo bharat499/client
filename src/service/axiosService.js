@@ -1,7 +1,8 @@
+import React from 'react';
 import axios from "axios";
 import ApiEndPoint from "../service/apiUrls.json";
 
-const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const axiosService = axios.create({
   baseURL: API_BASE_URL,
